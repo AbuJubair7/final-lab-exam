@@ -1,10 +1,12 @@
 // components/common/LogoutButton.tsx
 "use client";
-import React from "react";
+import React, { use } from "react";
+import { useRouter } from "next/navigation";
 
 const LogoutButton = () => {
+  const router = useRouter();
   const handleLogout = async () => {
-    alert("Logout successful!");
+    router.push("/admin/login");
   };
 
   return <button onClick={handleLogout}>Logout</button>;

@@ -2,7 +2,6 @@
 "use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import AdminDashboardPage from "../admin/dashboard/page";
 
 const RegistrationForm = () => {
   const [fullName, setFullName] = useState("");
